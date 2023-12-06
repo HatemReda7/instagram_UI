@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:instagram/core/utils/app_images.dart';
@@ -15,7 +13,7 @@ class StoryItem extends StatelessWidget {
         Container(
           width: 70,
           margin: EdgeInsets.only(bottom: 2.h,right: 5.w,left: 10.w,top: 15.h),
-          decoration: BoxDecoration(gradient: LinearGradient(colors: [
+          decoration: BoxDecoration(gradient: const LinearGradient(colors: [
             Color(0xffFAF006),
             Color(0xffFACC05),
             Color(0xffFACC05),

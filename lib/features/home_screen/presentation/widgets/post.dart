@@ -50,51 +50,49 @@ class PostItem extends StatelessWidget {
           ImageIcon(AssetImage(comment),color: Colors.black,size: 26.sp,),
           SizedBox(width: 15.w,),
           ImageIcon(AssetImage(share),color: Colors.black,size: 26.sp,),
-          Spacer(),
+          const Spacer(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.w,vertical: 13.h),
             child: ImageIcon(AssetImage(save),color: Colors.black,size: 26.sp,),
           ),
         ],),
-        Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24.w),
-                child: RichText(text: TextSpan(children: [
-                  TextSpan(text: "Liked by",style: GoogleFonts.roboto(color: Colors.black,fontWeight: FontWeight.w300,fontSize: 16.sp)),
-                  TextSpan(text: " hatemreda7",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
-                  TextSpan(text: " and",style: GoogleFonts.roboto(color: Colors.black,fontWeight: FontWeight.w300,fontSize: 16.sp)),
-                  TextSpan(text: " 905,500 others",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
-                ]),textAlign:  TextAlign.left,),
-              ),
-              SizedBox(height: 8.h,),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24.w),
-                child: RichText(text: TextSpan(children: [
-                  TextSpan(text: "marvel",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
-                  TextSpan(text: "  Start your countdown to the glorious arrival of Marvel Studios' #Loki",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 16.sp)),
-                  TextSpan(text: "...more",style: GoogleFonts.roboto(fontWeight: FontWeight.w300,color: Color(0xff8A8A8A),fontSize: 16.sp)),
-                ]),textAlign:  TextAlign.left,),
-              ),
-              SizedBox(height: 8.h,),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24.w),
-                child: RichText(text: TextSpan(children: [
-                  TextSpan(text: "View all 103 comments",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: Color(0xff8A8A8A),fontSize: 16.sp)),
-                ]),textAlign:  TextAlign.left,),
-              ),
-              SizedBox(height: 8.h,),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24.w),
-                child: RichText(text: TextSpan(children: [
-                  TextSpan(text: "3 hours ago",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: Color(0xff8A8A8A),fontSize: 16.sp)),
-                ]),textAlign:  TextAlign.left,),
-              ),
-              SizedBox(height: 8.h,),
-            ],
-          ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
+              child: RichText(text: TextSpan(children: [
+                TextSpan(text: "Liked by",style: GoogleFonts.roboto(color: Colors.black,fontWeight: FontWeight.w300,fontSize: 16.sp)),
+                TextSpan(text: " hatemreda7",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
+                TextSpan(text: " and",style: GoogleFonts.roboto(color: Colors.black,fontWeight: FontWeight.w300,fontSize: 16.sp)),
+                TextSpan(text: " 905,500 others",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
+              ]),textAlign:  TextAlign.left,),
+            ),
+            SizedBox(height: 8.h,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
+              child: RichText(text: TextSpan(children: [
+                TextSpan(text: "marvel",style: GoogleFonts.roboto(fontWeight: FontWeight.w500,color: Colors.black,fontSize: 16.sp)),
+                TextSpan(text: "  Start your countdown to the glorious arrival of Marvel Studios' #Loki",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 16.sp)),
+                TextSpan(text: "...more",style: GoogleFonts.roboto(fontWeight: FontWeight.w300,color: const Color(0xff8A8A8A),fontSize: 16.sp)),
+              ]),textAlign:  TextAlign.left,),
+            ),
+            SizedBox(height: 8.h,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
+              child: RichText(text: TextSpan(children: [
+                TextSpan(text: "View all 103 comments",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: const Color(0xff8A8A8A),fontSize: 16.sp)),
+              ]),textAlign:  TextAlign.left,),
+            ),
+            SizedBox(height: 8.h,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
+              child: RichText(text: TextSpan(children: [
+                TextSpan(text: "3 hours ago",style: GoogleFonts.roboto(fontWeight: FontWeight.w400,color: const Color(0xff8A8A8A),fontSize: 16.sp)),
+              ]),textAlign:  TextAlign.left,),
+            ),
+            SizedBox(height: 8.h,),
+          ],
         )
       ],
     );

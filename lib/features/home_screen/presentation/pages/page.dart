@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:instagram/core/utils/app_images.dart';
-import 'package:instagram/features/home_screen/presentation/widgets/Story.dart';
+import 'package:instagram/features/home_screen/presentation/widgets/story.dart';
 import 'package:instagram/features/home_screen/presentation/widgets/post.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                     Container(
                         decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.all(Radius.circular(100)),
+                                const BorderRadius.all(Radius.circular(100)),
                             color: Colors.blue,
                             border:
                                 Border.all(color: Colors.white, width: 3)),
@@ -69,11 +69,11 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: Container(
+                child: SizedBox(
                   height: 110,
                   child: ListView.builder(itemBuilder: (context, index) {
-                    return StoryItem();
-                  },itemCount: 9,scrollDirection: Axis.horizontal,physics: AlwaysScrollableScrollPhysics()),
+                    return const StoryItem();
+                  },itemCount: 9,scrollDirection: Axis.horizontal,physics: const AlwaysScrollableScrollPhysics()),
                 ),
               )
             ],
@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
           SizedBox(height: 10.h),
           Expanded(
             child: ListView.builder(itemBuilder: (context, index) {
-              return PostItem();
+              return const PostItem();
             },itemCount: 10,),
           ),
         ],
