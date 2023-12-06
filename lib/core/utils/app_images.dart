@@ -1,0 +1,10 @@
+String profilePicture="assets/pp.png";
+String add="assets/Add.png";
+String comment="assets/comment.png";
+String logo="assets/logos_instagram.png";
+String messages="assets/msg.png";
+String save="assets/save.png";
+String share="assets/share.png";
+String like="assets/Vector.png";
+String marvelPP="assets/Ellipse 3.png";
+String postImage="assets/Rectangle 1.png";
