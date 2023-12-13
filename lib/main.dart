@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:instagram/features/home_screen/presentation/pages/page.dart';
 
+import 'features/home_layout/presentation/pages/bottom_bar.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,10 +19,12 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: HomeScreen.routeName,
+          initialRoute: BottomBar.routeName,
           routes: {
+            BottomBar.routeName: (context) => BottomBar(),
             HomeScreen.routeName: (context) => const HomeScreen(),
           },
-        ));
+        )
+    );
   }
 }

@@ -8,3 +8,5 @@ String share="assets/share.png";
 String like="assets/Vector.png";
 String marvelPP="assets/Ellipse 3.png";
 String postImage="assets/Rectangle 1.png";
+String pP2="assets/PP2.png";
+String beach="assets/beach.png";
